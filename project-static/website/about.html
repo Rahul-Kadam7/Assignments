@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LaunchPadX - Product Landing Page</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #333; }
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white; padding: 60px 20px; text-align: center;
+    }
+    .cta-button {
+      background: white; color: #764ba2;
+      padding: 10px 20px; border-radius: 25px; font-weight: bold;
+      text-decoration: none; margin-top: 20px; display: inline-block;
+    }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .features {
+      display: flex; gap: 20px; flex-wrap: wrap;
+    }
+    .feature {
+      flex: 1 1 30%; background: #f4f4f4; padding: 20px; border-radius: 10px;
+    }
+    .testimonial {
+      background: #eee; padding: 20px; border-left: 5px solid #764ba2;
+      margin: 20px 0;
+    }
+    footer {
+      background: #333; color: white; text-align: center; padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .features { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to LaunchPadX</h1>
+    <p>Launch your product with style and impact.</p>
+    <a href="#features" class="cta-button">Explore Features</a>
+  </header>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Fast Deployment</h3>
+        <p>Deploy your product instantly with our no-code platform.</p>
+      </div>
+      <div class="feature">
+        <h3>Customizable</h3>
+        <p>Design your site the way you want it with drag-and-drop tools.</p>
+      </div>
+      <div class="feature">
+        <h3>Analytics</h3>
+        <p>Get real-time insights and boost performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+      <p>"LaunchPadX made it incredibly easy to get my startup off the ground!"</p>
+      <strong>- Riya Sharma, Founder of FoodDash</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Beautiful design and powerful tools. Highly recommend!"</p>
+      <strong>- Akash Mehta, App Developer</strong>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LaunchPadX. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

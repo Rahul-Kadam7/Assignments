@@ -1,0 +1,38 @@
+Command	Description
+ls	List files and directories
+ls -l	Long listing format
+ls -a	List all files including hidden
+cd <dir>	Change directory
+pwd	Show current directory
+mkdir <dir>	Make new directory
+rmdir <dir>	Remove empty directory
+rm -r <dir>	Remove directory and its contents
+touch <file>	Create empty file
+cp <src> <dest>	Copy file/directory
+mv <src> <dest>	Move or rename file/directory
+rm <file>	Delete a file
+cat <file>	Show file content
+less <file>	View file one screen at a time
+head <file>	Show first 10 lines
+tail <file>	Show last 10 lines
+nano <file>	Edit file using nano
+vim <file>	Edit file using vim
+whoami	Show current user
+sudo <command>	Run command as root
+chmod <mode> <file>	Change file permissions
+chown <user>:<group> <file>	Change ownership
+top	Show running processes
+ps	Show process status
+kill <PID>	Kill process by PID
+df -h	Disk space usage
+free -h	Memory usage
+uptime	System running time
+uname -a	System info
+ip a	Show IP addresses
+ping <host>	Check network connectivity
+curl <url>	Fetch data from URL
+wget <url>	Download file from URL
+apt update	Update package list
+apt upgrade	Upgrade packages
+apt install <pkg>	Install package
+apt remove <pkg>	Remove package

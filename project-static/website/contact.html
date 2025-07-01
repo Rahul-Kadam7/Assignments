@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TasteBuds | Modern Restaurant</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://picsum.photos/seed/restaurant/1600/600') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+      flex-direction: column;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .about, .menu {
+      text-align: center;
+    }
+    .menu-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .item {
+      background: #f4f4f4;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 30%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .contact {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to TasteBuds</h1>
+    <p>Where taste meets elegance</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At TasteBuds, we serve authentic dishes made with love, fresh ingredients, and a pinch of passion. Experience fine dining like never before.</p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Popular Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Margherita Pizza</h3>
+        <p>Classic delight with mozzarella and basil.</p>
+        <p>₹350</p>
+      </div>
+      <div class="item">
+        <h3>Grilled Paneer Steak</h3>
+        <p>Spiced paneer with creamy pepper sauce.</p>
+        <p>₹450</p>
+      </div>
+      <div class="item">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Warm gooey dessert to end your meal.</p>
+        <p>₹250</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/seed/food1/400/300" alt="Food 1" />
+      <img src="https://picsum.photos/seed/food2/400/300" alt="Food 2" />
+      <img src="https://picsum.photos/seed/food3/400/300" alt="Food 3" />
+      <img src="https://picsum.photos/seed/food4/400/300" alt="Food 4" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Culinary Street, Mumbai</p>
+    <p>📞 +91-9876543210</p>
+    <p>📧 contact@tastebuds.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TasteBuds Restaurant. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+

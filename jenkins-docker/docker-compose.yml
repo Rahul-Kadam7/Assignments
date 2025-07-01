@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  jenkins:
+    build: .                       # Build using Dockerfile in current directory
+    container_name: jenkins-server
+    ports:
+      - "8080:8080"                # Jenkins web interface
+      - "50000:50000"              # For Jenkins agents/slaves
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    restart: unless-stopped        # Automatically restart if container fails
+
+volumes:
+  jenkins_home:                    # Persistent Jenkins data
+
