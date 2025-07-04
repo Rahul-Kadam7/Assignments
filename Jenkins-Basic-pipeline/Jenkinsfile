@@ -27,6 +27,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Quality Gate') {
+            steps {
+                timeout(time: 1, unit: 'MINUTES') {  // Adjust timeout as needed
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+        }
          
          stage('Install Dependencies') {
             steps {
